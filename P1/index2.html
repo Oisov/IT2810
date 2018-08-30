@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+
+<body background="background.jpg">
+
+    <div class="wrapper">
+    <canvas id="canvas" width=470 height=233></canvas>
+
+    <div class="container">
+        <div class="animate three">
+            <span>W</span>
+            <span>h</span>
+            <span>a</span>
+            <span>l</span>
+            <span>e</span>
+            <span>f</span>
+            <span>i</span>
+        </div>
+    </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="btn-holder">
+            <div id="nav-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="whale.js"></script>
+    <script>
+     var text_action = 'FadeIn'
+     $("p").fadeOut(1);
+     $(document).ready(function(){
+	       $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		         $(this).toggleClass('open');
+
+             if(text_action == 'FadeOut') {
+		             $('p').fadeOut('slow');
+		             text_action = 'FadeIn';
+	           }
+	           else {
+		             $('p').fadeIn('slow');
+		             text_action = 'FadeOut';
+	           }
+	       });
+     });
+    </script>
+</body>
+
+</html>

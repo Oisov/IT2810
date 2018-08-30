@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="wifi.css">
+    <link rel="stylesheet" type="text/css" href="styl4.css">
+</head>
+
+<body background="background.jpg">
+
+    <div class="wrapper">
+        <div id="row1">
+            <div id="art-title"><h1>Whalefi</h1></div>
+            <div class="color-box" id="art-info">
+                <p> In 2006
+                    <strong>Bouygues Telecom</strong> and <strong>Vodafone</strong> decided
+                    to merge. As this was a controversial merger between the
+                    biggest internet provider in respectively Germany and
+                    France, they decided to renew with a new company name
+                    and logo. The company logo was choosen through a
+                    competition between 12 renowned artists, 6 from Germany
+                    and 6 from France. <i>Urszula Donovan</i> won with
+                    the contribution you see below.
+                </p>
+                <div id="status"></div>
+
+            </div>
+        </div>
+        <div id="row2">
+            <canvas id="canvas"></canvas>
+            <div id="wifi" class="hidden-wifi">
+                <div class="wifi-symbol">
+                    <div class="wifi-circle first"></div>
+                    <div class="wifi-circle second"></div>
+                    <div class="wifi-circle third"></div>
+                </div>
+            </div>
+        </div>
+        <div id="row3">
+            <div id="hamburger">
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="cols color-box hidden"><h2>CSS-grid and Flexbox-layout</h2>
+                <p>
+                    In the beginning every website was designed to be used on a
+                    PC-monitor with a keyboard and mouse, however today we have
+                    hundreds of different devices that connect to the web,
+                    varying largely in sizes. This initially ushered a sharp
+                    distinction between desktop and mobile sites, where apps
+                    were the dominating way to interact with websites. Flexbox
+                    and CSS-grid is one way to bridge this gap with new
+                    responsive design techniques, and using these tools it is
+                    much easier to design websites that can be rendered on a
+                    3.5" smartphone or a 55" TV.
+
+                    The main difference is that Flexbox is made for one
+                    dimensional layouts and Grid is made for two dimensional
+                    layouts.Another core difference between the two is that
+                    Flexbox takes basis in the <i>content</i> while Grid takes basis in
+                    the <i>layout</i>. In practice this means it is easier to
+                    add rows and columns to flexbox, while the Grid initialized
+                    first.
+                </p>
+            </div>
+            <div class="cols color-box hidden"><h2>Use of SVG and canvas in HTML</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                </p>
+            </div>
+            <div class="cols color-box hidden"><h2>jQuery</h2>
+                <p>
+                    jQuery is a lightweight JavaScript library where the main
+                    purposeis to make it much easier to use JavaScript on a
+                    website. jQuery has many benefits such as displaying
+                    elements even when JavaScript is disabled, and makes
+                    animated applications like Flash. As jQuery code often is
+                    simpler and shorter, it can also reduce the loading times of
+                    your website.
+                </p>
+            </div>
+            <div class="cols color-box hidden"><h2>cross-browser testing</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                </p>
+            </div>
+            <div class="cols color-box hidden"><h2>Information Sources</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                </p>
+            </div>
+            <div class="cols color-box hidden"><h2>Code sources</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+     $(document).ready(function(){
+
+	       $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		         $(this).toggleClass('open');
+             $(".hidden").fadeToggle();
+	       });
+     });
+    </script>
+
+    <script type="text/javascript" src="whaleDetection.js"></script>
+</body>
+
+</html>

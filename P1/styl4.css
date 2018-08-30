@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: LightGray;
+}
+
+.wrapper,
+html,
+body {
+    height: 100%;
+}
+
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 80px;
+    color: #0D77B8;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger {
+    flex-shrink: 2;
+    padding: 10px;
+}
+
+#art-title, #row2, #art-info, #canvas, #wifi, #hamburger, .cols {
+    /* border: 5px solid green; */
+}
+
+#row1 {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#art-title {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 200px;
+
+}
+
+#art-info {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 2 200px;
+}
+
+
+#row2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#canvas {
+    float:left;
+}
+
+#wifi {
+    overflow: hidden;
+}
+
+#row3 {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.cols {
+    margin: 10px;
+    padding: 10px;
+    flex: 1 400px;
+}
+
+#last-cols {
+    padding: 10px;
+    flex: 2 400px;
+}
+
+.color-box {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+
+.hidden-wifi {
+    display: none;
+}

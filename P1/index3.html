@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styl3.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+
+<body background="background.jpg">
+
+    <div class="fill-height-or-more">
+        <div>
+            <section>
+                <article>
+                    <div id="nav-icon4">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </article>
+                <article style="flex-grow: 2">
+                    <h1>Whalefi</h1>
+                </article>
+                <article>
+                    <p> In 2006
+                        <bf>Bouygues Telecom</bf> and <bf>Vodafone</bf> decided
+                        to merge. As this was a controversial merger between the
+                        biggest internet provider in respectively Germany and
+                        France, they decided to renew with a new company name
+                        and logo. The company logo was choosen through a
+                        competition between 12 renowned artists, 6 from Germany
+                        and 6 from France. <emph>Urszula Donovan</emph> won with
+                        the contribution you see below.
+                    </p>
+                </article>
+            </section>
+        </div>
+        <div>
+            <section>
+                <article></article>
+                <article id="container" style="flex-grow: 3">
+                    <canvas id="canvas"></canvas>
+                </article>
+            </section>
+        </div>
+        <div>
+            <section>
+                <article class="color-box hidden">
+                    <h2>First article</h2>
+
+                    <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                    </p>
+                </article>
+
+                <article class="color-box hidden">
+                    <h2>Second article</h2>
+
+                    <p>Tacos actually microdosing, pour-over semiotics banjo
+                    chicharrones retro fanny pack portland everyday carry vinyl
+                    typewriter. Tacos PBR&B pork belly, everyday carry ennui
+                    pickled sriracha normcore hashtag polaroid single-origin
+                    coffee cold-pressed. PBR&B tattooed trust fund twee,
+                    leggings salvia iPhone photo booth health goth gastropub
+                    hammock.
+                    </p>
+                </article>
+
+                <article class="color-box hidden">
+                    <h2>Third article</h2>
+
+                        <p>Tacos actually microdosing, pour-over semiotics banjo
+                        chicharrones retro fanny pack portland everyday carry
+                        vinyl typewriter. Tacos PBR&B pork belly, everyday carry
+                        ennui pickled sriracha normcore hashtag polaroid
+                        single-origin coffee cold-pressed. PBR&B tattooed trust
+                        fund twee, leggings salvia iPhone photo booth health
+                        goth gastropub hammock.
+                        </p>
+
+                        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled
+                        chambray waistcoat ennui. Organic small batch paleo
+                        8-bit. Intelligentsia umami wayfarers pickled,
+                        asymmetrical kombucha letterpress kitsch leggings
+                        cold-pressed squid chartreuse put a bird on it. Listicle
+                        pickled man bun cornhole heirloom art party.</p>
+                </article>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+     var show_text = false;
+     $(document).ready(function(){
+
+	       $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		         $(this).toggleClass('open');
+             $(".hidden").fadeToggle();
+	       });
+     });
+
+     function resizeCanvas(){
+         let con = $("#container"),
+             canvas = $("#canvas")[0],
+             aspect = canvas.height/canvas.width,
+             width = con.width(),
+             height = con.height();
+
+         canvas.width = width;
+         canvas.height = Math.round(width * aspect);
+
+     }$( window ).resize(function() {
+         resizeCanvas()
+     });
+
+    </script>
+    <script type="text/javascript" src="whaleDetection.js"></script>
+</body>
+
+</html>
